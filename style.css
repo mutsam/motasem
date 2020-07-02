@@ -1,0 +1,151 @@
+  *{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0; 
+}
+
+  body{ 
+   width: 100%;
+   height: 100vh;
+   background-image: radial-gradient( #424242,  #111); 
+  transition: background-color .5s;
+   }
+   
+   .nav {
+     display: flex;
+	 flex-direction: row;
+     background: #ffb300;
+     width: 55%; 
+     justify-content: space-around;
+	 border-radius: 0px 0px 10px 0px;
+   } 
+   .nav a , .logo , .footer{
+      font-size: 1.8em;
+      text-decoration: none;
+      color: black;
+      padding: 10px;
+   }
+   
+   .footer{     
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     background: #ffb300;
+     width: 55%; 
+	 border-radius: 10px 0px 0px 0px;
+     }
+     
+     .content{ 
+        width: 400px;
+        position: relative;
+        top: 90px;
+        left: 140px;
+        font-size: 1.9em;
+     }
+     
+     .line1{
+      font-size: 1.9em;
+      color: #ffc119;
+	  margin-bottom: 40px;
+     }
+     .line1 span{
+       font-size: 0.5em;
+       color: white; 
+       padding-bottom: 25px;
+       border-bottom: 1px solid #ffc119; 
+     }
+     .line2{ background: #ffb300; margin-bottom: 15px;  border-radius: 4px; padding: 3px;}
+	 
+     .line3{
+       color: white;
+       padding-bottom: 20px;
+       border-bottom: 1px solid #ffc119; 
+     }
+	 .img{
+	    position: absolute;
+		top: 25%;
+		left: 50%;
+		
+	 }
+	 a.logo{
+	   width: 200px; 
+       letter-spacing: 3px; 
+	   word-spacing: 10px;
+       font-size: 2em;
+       font-family: 'Impact';
+	   color: #fe6801;
+	 }
+	  
+	 
+@media screen and (max-width: 900px) {
+  .content , .img , .footer{
+		    padding: 0;
+			margin: 0;
+			position: static;
+			width: 100%;
+			text-align: center;
+   }  
+  .logo{ width: 100%;}
+  .nav{display: none;}
+   .content{ padding: 10px;}
+}
+	 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#fb8c00;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 20px 0px;
+  text-align: center;
+  text-decoration: none; 
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+.closebtn:hover{  color:#222;}
+.sidenav a:hover:not(.closebtn) {
+  background: #457;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}  
+
+.p{ 
+	cursor:pointer;
+    font-size:30px;
+	display: none;
+	color: #e65100;
+	padding: 10px 20px;
+	background: #ffb300;
+}
+.icon{
+  position: absolute;
+  top: 1.5%;
+  left: 50%;
+  display: none;
+  font-size: 2em;
+  color: #424242;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 5px #eee;;
+}
+@media screen and (max-width: 900px) {
+ 
+   .p , .icon{display: block;}
+   
+}

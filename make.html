@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Moatasem </title>
+ <link rel='stylesheet' href='style.css' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset='UTF-8' />
+ <link rel="icon" sizes="32x32" type="image/png" href='icon.ico' />
+</head>
+<body>
+  <div  class='p'  onclick="openNav()">&#9776; </div>
+  <div class='icon'> ICON </div>
+  <div  id="mySidenav" class="sidenav">  
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+    <a href='#' > Home</a>
+    <a href='#' > Friend</a>
+    <a href='#' > Work</a>
+    <a href='#' > About</a>
+</div>
+  
+  <div   class="nav">  
+    <a href='#' class='logo' > MY PAGE </a>
+    <a href='#' > Home</a>
+    <a href='#' > Friend</a>
+    <a href='#' > Work</a>
+    <a href='#' > About</a>
+</div>
+      
+      <div class='content'>
+         <div class='line1'> <span>NF. &#160; &#160;</span>LET ME GO </div>
+         <div class='line2 '> "EVERBODY HAS A DARK SIDE"</div>
+         <div class='line3'> "I feel very happy to create the page"</div>
+    </div> 
+	
+	 <div class='img'> <img src='101.png' /> </div>
+
+<div class='footer' >
+Created by : Moatasem Mohamed Shafa
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+
+</body>
+</html>
+
+
